@@ -1,0 +1,79 @@
+<html>
+ <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: rgb(239,64,47);
+background: linear-gradient(90deg, rgba(239,64,47,1) 0%, rgba(235,166,151,1) 60%, rgba(255,229,218,1) 91%);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+      .input-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .input-group input {
+        padding: 5px;
+        font-size: 16px;
+      }
+      .button {
+        background-color: rgb(228, 103, 75);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 8px 16px 0 rgb(157, 70, 70), 0 6px 20px 0 #b56767;
+        transition: 0.5s;
+        text-align: center;
+      }
+      .button:hover{
+          background-color: #843333;
+          color: white;
+      }
+      label {
+          color: white;
+      }
+      h1 {
+          color: white;
+      }
+    </style>
+    <script>
+      // JavaScript code goes here
+      function submitForm() {
+        alert("Form submitted!");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- HTML code goes here -->
+    <div class="container">
+      <h1>Forms</h1>
+      <form>
+        <div class="input-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="input-group">
+          <label for="message">Mensagem:</label>
+          <textarea id="message"></textarea>
+        </div>
+        <button class="button" onclick="submitForm()">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
